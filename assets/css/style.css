@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    font-family: 'Oswald', sans-serif;
+    /* max-width: 1400px; */
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.justify-content-center{
+    background:linear-gradient(rgba(167, 3, 3, 0.486), rgba(128, 128, 128, 0.473));
+}
+.overflow {
+    overflow: hidden;
+}
+.bg-grey {
+    color: #434343;
+}
+
+/* Navigation */
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.navlogo {
+    width: 155px;
+    height: 80px;
+    margin: 0px 30px;
+}
+.name_company{
+    height: 100px;
+    width: 250px;
+}
+.name_and_logo{
+    position: absolute;
+    z-index: 6;
+    height: 90px;
+    width: 200px;
+    display: block;
+}
+.just_logo{
+    position: absolute;
+    z-index: 5;
+    height: 100px;
+    width: 100px;
+    margin-left: 60px;
+    object-fit:contain;
+    display: none;
+}
+.navlogo img{
+    height: 80px;
+    width: 200px;
+}
+.column1 {
+    width: 400px;
+    height: 70vh;
+}
+.nav {
+    display: flex;
+    justify-content: left;
+    margin: 10px ;
+}
+.columnshop {
+    display: flex;
+    position: fixed;
+    background-color: #434343;
+    width: 30%;
+    margin-left: 70%;
+    height: 100%;
+}
+/* Header */
+.header {
+    height: 300px;
+    background:linear-gradient( #eb4a5a63, rgba(255, 166, 0, 0.5) ) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.logo {
+    width: 500px;
+    height: 500px;
+}
+.bg-card {
+    transition: all 0.25s;
+}
+.row .bg-card:hover {
+    transform: translateY(-10px);
+}
+.btn-danger {
+    background-color: #eb4a5a !important;
+    border-color: #434343;
+    transform: #434343;
+    margin-right: 20px;
+}
+/* footer */
+.footer {
+    margin-top: 50px;
+}
+.textfooter {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 230px;
+    background-color: #434343;
+}
+.fa-heart:before{
+ color: red;  
+ font-size: 50px;
+}
+.fa-terminal:before{
+ font-size: 20px;
+}
+.my_name{
+    font-size: 30px;
+    display: inline-block;
+    color: #000;
+    background: #fff;
+    /* mix-blend-mode: multiply; */
+    position: relative;
+}
+.my_name::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, red, blue);
+    mix-blend-mode: screen; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
